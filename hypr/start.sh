@@ -7,4 +7,5 @@ nm-applet --indicator &
 waybar &
 dunst &
 hypridle &
-hyprpaper
+hyprpaper &
+systemctl --user start hyprpolkitagent
