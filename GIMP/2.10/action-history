@@ -1,0 +1,12 @@
+# GIMP action-history
+
+(history-item "file-export-as" 1)
+(history-item "file-open" 1)
+(history-item "file-save-as" 1)
+(history-item "dialogs-layers" 0)
+(history-item "layers-alpha-add" 0)
+(history-item "tools-ellipse-select" 0)
+(history-item "tools-by-color-select" 0)
+(history-item "file-save" 1)
+
+# end of action-history
