@@ -23,6 +23,7 @@
 
     # desktop software
     gimp
+    gparted
 
     #cursor
     rose-pine-hyprcursor
