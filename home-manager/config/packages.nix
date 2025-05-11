@@ -7,6 +7,10 @@
     kitty
     tmux
 
+    # nix packages
+    alejandra
+    nil
+
     # for nvim config lsp and tree sitter to work correctly
     cargo
     nodejs_23
@@ -28,5 +32,6 @@
 
     #cursor
     rose-pine-hyprcursor
+
   ];
 }
