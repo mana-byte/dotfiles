@@ -10,7 +10,9 @@
     # for nvim config lsp and tree sitter to work correctly
     cargo
     nodejs_23
-    python314
+    (python3.withPackages (python-pkgs: [
+        python-pkgs.requests
+    ]))
     gcc
     glibc
 

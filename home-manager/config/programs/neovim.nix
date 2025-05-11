@@ -1,3 +1,3 @@
 {
-  xdg.configFile."nvim".source = ../../dotfiles/nvim.nogit;
+  xdg.configFile."nvim".source = ../../dotfiles/nvim.nix;
 }
