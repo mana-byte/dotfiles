@@ -8,10 +8,6 @@ return {
                     lua = { "stylua" },
                     python = { "black" },
                     nix = { "alejandra" },
-                    javascript = { "biome" },
-                    typescript = { "biome" },
-                    javascriptreact = { "biome" },
-                    typescriptreact = { "biome" },
                 },
                 format_on_save = {
                     -- These options will be passed to conform.format()
@@ -19,9 +15,7 @@ return {
                     lsp_format = "fallback",
                 },
             })
-            vim.keymap.set("n", "<Space>ff", function()
-                require("conform").format({ async = true, lsp_fallback = true })
-            end, { noremap = true, silent = true, desc = "Format file with Conform" })
+            vim.keymap.set("n", "<Space>ff", ":lua require('conform').format()<CR>", { silent = true })
         end,
     },
 }
