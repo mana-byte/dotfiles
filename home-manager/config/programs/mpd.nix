@@ -6,15 +6,16 @@
   # Configure MPD service
   services.mpd = {
     enable = true;
-    musicDirectory = "~/Music"; # Path to your music directory
+    musicDirectory = "${config.home.homeDirectory}/Music"; # Properly reference home directory
     extraConfig = ''
       audio_output {
-        type "pulse"
-        name "PulseAudio"
+        type "pipewire"
+        name "My PipeWire Output"
       }
-      bind_to_address "127.0.0.1"
-      port "6600"
     '';
-    dataDir = "~/.config/mpd"; # Where MPD stores its database and other files
+    dataDir = "${config.home.homeDirectory}/.config/mpd"; # Absolute path using the home-manager variable
+    playlistDirectory = "${config.home.homeDirectory}/.config/mpd/playlists"; # Also need absolute path
+    network.listenAddress = "any"; # if you want to allow non-localhost connections
+    network.startWhenNeeded = true; # systemd feature: only start MPD service upon connection to its socket
   };
 }

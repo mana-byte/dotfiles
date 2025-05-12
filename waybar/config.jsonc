@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["custom/wallpaper","network","pulseaudio","clock", "battery","custom/power"],
+	"modules-right": ["custom/wallpaper","network","pulseaudio" ,"clock", "battery","custom/power"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -69,7 +69,7 @@
             "default": " "
         },
         "escape": true,
-        // "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "exec": "$HOME/.config/waybar/script/mediaplayer.py",
         "on-click": "bash ~/.config/rofi/applets/bin/mpd.sh"
     },
     "custom/launcher":{

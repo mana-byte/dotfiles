@@ -42,15 +42,15 @@ if [[ "$layout" == 'NO' ]]; then
 	option_6=" Random"
 else
 	if [[ ${status} == *"[playing]"* ]]; then
-		option_1=""
+		option_1=" Pause"
 	else
-		option_1=""
+		option_1="  Play"
 	fi
-	option_2=""
-	option_3=""
-	option_4=""
-	option_5=""
-	option_6=""
+	option_2="  Stop"
+	option_3="  Back"
+	option_4="  Next"
+	option_5="  Repeat"
+	option_6="  Random"
 fi
 
 # Toggle Actions
