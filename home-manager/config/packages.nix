@@ -1,5 +1,4 @@
-{pkgs, ...}:
-{
+{pkgs, ...}: {
   home.packages = with pkgs; [
     # work basics
     neovim
@@ -15,7 +14,7 @@
     cargo
     nodejs_23
     (python3.withPackages (python-pkgs: [
-        python-pkgs.requests
+      python-pkgs.requests
     ]))
     gcc
     glibc
@@ -29,9 +28,9 @@
 
     # desktop software
     gimp
+    discord
 
     #cursor
     rose-pine-hyprcursor
-
   ];
 }

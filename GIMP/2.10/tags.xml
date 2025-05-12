@@ -1369,6 +1369,9 @@
   <resource identifier="DejaVu Serif Semi-Condensed" checksum="(null)">
   </resource>
 
+  <resource identifier="feather" checksum="(null)">
+  </resource>
+
   <resource identifier="Font Awesome 6 Brands" checksum="(null)">
   </resource>
 
@@ -1412,6 +1415,15 @@
   </resource>
 
   <resource identifier="FreeSerif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Grape Nuts" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font" checksum="(null)">
   </resource>
 
   <resource identifier="JetBrainsMono Nerd Font" checksum="(null)">

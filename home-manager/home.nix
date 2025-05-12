@@ -1,12 +1,14 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   home.username = "mana";
   home.homeDirectory = "/home/mana";
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
+  nixpkgs.config.allowUnfree = true;
 
-  
   imports = [
     ./config/env.nix
     ./config/packages.nix
@@ -17,11 +19,8 @@
     # ./config/programs/tmux.nix
   ];
 
-
   home.file = {
-
   };
-
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
