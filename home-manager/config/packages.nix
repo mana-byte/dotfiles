@@ -26,6 +26,9 @@
     starship
     neofetch
 
+    # rofi applets dependencies: https://github.com/adi1090x/rofi?tab=readme-ov-file
+    mpc_cli
+
     # desktop software
     gimp
     discord

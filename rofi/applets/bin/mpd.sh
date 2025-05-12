@@ -7,7 +7,7 @@
 
 # Import Current Theme
 source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="$type/$style"
+theme="~/.config/rofi/applets/type-5/music.rasi"
 
 # Theme Elements
 status="`mpc status`"

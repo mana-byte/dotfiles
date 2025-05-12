@@ -16,6 +16,7 @@
     ./config/bashrc.nix
     ./config/programs/git.nix
     ./config/programs/neovim.nix
+    ./config/programs/mpd.nix
     # ./config/programs/tmux.nix
   ];
 
