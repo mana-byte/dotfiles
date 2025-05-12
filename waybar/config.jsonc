@@ -60,7 +60,7 @@
         "max-length": 10
     },
     "custom/media": {
-        "interval": 30,
+        "interval": 1,
         "format": "{icon} {}",
         "return-type": "json",
         "max-length": 20,
