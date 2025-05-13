@@ -1,10 +1,8 @@
-{ pkgs, ... }: {
-    programs.bash = {
-        enable =  true;
-        initExtra = ''
-            eval "$(starship init bash)"
-            neofetch
-        '';
-
-    };
+{pkgs, ...}: {
+  programs.bash = {
+    enable = true;
+    initExtra = ''
+      eval "$(starship init bash)"
+    '';
+  };
 }
