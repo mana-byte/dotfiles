@@ -9,7 +9,6 @@
     git
     kitty
     tmux
-    cachix
 
     # nix packages
     alejandra
