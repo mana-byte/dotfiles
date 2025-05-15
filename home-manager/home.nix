@@ -18,6 +18,7 @@
     ./config/programs/git.nix
     ./config/programs/neovim.nix
     ./config/programs/mpd.nix
+    ./config/programs/starship.nix
     # ./config/programs/tmux.nix
   ];
 
