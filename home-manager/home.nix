@@ -12,6 +12,7 @@
   imports = [
     ./config/env.nix
     ./config/packages.nix
+    ./config/gtk.nix
     # ./config/programs/zsh.nix
     ./config/bashrc.nix
     ./config/programs/git.nix

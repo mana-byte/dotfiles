@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["custom/wallpaper","network","pulseaudio" ,"clock", "battery","custom/power"],
+	"modules-right": ["custom/photo","network","pulseaudio" ,"clock", "battery","custom/power"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -19,9 +19,12 @@
 		"num-tags": 6
     },
 	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": ""
+		"tooltip": true,
+		"format-wifi": "  ({signalStrength}%)",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "  {ifname}: {ipaddr}/{cidr}"
 	},
 	"backlight": {
 		"tooltip": false,
@@ -43,11 +46,12 @@
         "format-icons": ["", "", "", "", ""],
     },
 	"tray":{
-		"icon-size":18,
-		"spacing": 10
+		"icon-size":22,
+		"spacing": 5
 	},
     "clock": {
         "format": "  {:%H:%M}",
+        "tooltip-format": "  {:%a %b %d}",
     },
     "cpu": {
         "interval": 15,
@@ -61,28 +65,29 @@
     },
     "custom/media": {
         "interval": 1,
-        "format": "{icon} {}",
+        "format": "{}",
         "return-type": "json",
         "max-length": 20,
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
-        },
         "escape": true,
         "exec": "$HOME/.config/waybar/script/mediaplayer.py",
         "on-click": "bash ~/.config/rofi/applets/bin/mpd.sh"
     },
     "custom/launcher":{
-        "format": "🍱",
+        "tooltip": true,
+        "format": " ",
         "on-click": "rofi -show drun -theme ~/.config/rofi/launchers/type-6/style-4.rasi",
-        "on-click-right": "killall rofi"
+        "on-click-right": "killall rofi",
+        "tooltip-format": "NixOS x Hyprland x Kanagawa",
     },
     "custom/power":{
         "format": " ",
         "on-click": "bash ~/.config/rofi/powermenu/type-6/powermenu.sh",
+        "tooltip-format": "Bring up the power menu",
     },
-    "custom/wallpaper":{
-        "format":" ",
-        // "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    "custom/photo":{
+        "format":"",
+        "on-click": "hyprshot -m window",
+        "on-click-right": "hyprshot -m region",
+        "tooltip-format": "Take a screenshot",
     }
 }

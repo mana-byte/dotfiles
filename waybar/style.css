@@ -41,7 +41,7 @@
 	border: none;
 	border-radius: 10;
     font-family: "JetbrainsMono Nerd Font" ;
-	font-size: 14px;
+	font-size: 16px;
 	/* min-height: 10px; */
     margin: 2px;
 }
@@ -102,7 +102,6 @@ window#waybar.hidden {
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
-	color: #FAE3B0;
     border-color: #E8A2AF;
     color: #E8A2AF;
 }
@@ -119,8 +118,7 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @crystal_blue;
+	color: @dragon_blue;
 }
 
 #pulseaudio {
@@ -131,8 +129,7 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #1A1826;
-	background: @autumn_yellow;
+	color: @boat_yellow_2;
 }
 
 #battery {
@@ -143,18 +140,15 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @old_white;
+	color: @old_white;
 }
 
 #battery.charging, #battery.plugged {
-	color: #161320;
-    background-color: @autumn_green;
+    color: @autumn_green;
 }
 
 #battery.critical:not(.charging) {
-    background-color: @samurai_red;
-    color: #161320;
+    color: @samurai_red;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -177,8 +171,7 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @spring_green;
+	color: @spring_violet_2;
 }
 
 #memory {
@@ -189,8 +182,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @oni_violet;
+	color: @oni_violet;
 }
 #cpu {
 	margin-top: 6px;
@@ -200,8 +192,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @spring_blue;
+	color: @old_white;
 }
 
 #tray {
@@ -212,20 +203,17 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #B5E8E0;
-	background: @dragon_blue;
+	/* background-color: @dragon_blue; */
 }
 
 #custom-launcher {
 	font-size: 24px;
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 5px;
-	border-radius: 10px;
+	margin-top: 4px;
+	margin-left: 6px;
+	padding-left: 8px;
+	padding-right: 3px;
 	transition: none;
-    color: #89DCEB;
-    background: @sumi_ink_1;
+    color: @crystal_blue;
 }
 
 #custom-power {
@@ -238,11 +226,11 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @sakura_pink;
+	color: @spring_green;
 }
 
-#custom-wallpaper {
+#custom-photo {
+    font-size: 20px;
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
@@ -250,8 +238,7 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @wave_aqua_1;
+    color: @wave_red
 }
 
 #custom-media {
@@ -262,8 +249,7 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: @surimi_orange;
+	color: @autumn_green;
 }
 
 #workspaces button {

@@ -24,20 +24,18 @@
     glibc
 
     # customisation
-    nwg-look
-    kanagawa-gtk-theme
-    kanagawa-icon-theme
     starship
     neofetch
+    sassc
+    gtk-engine-murrine
+    gnome-themes-extra
 
     # rofi applets dependencies: https://github.com/adi1090x/rofi?tab=readme-ov-file
     mpc_cli
+    eww
 
     # desktop software
     gimp
     discord
-
-    #cursor
-    rose-pine-hyprcursor
   ];
 }
