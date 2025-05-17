@@ -76,7 +76,7 @@ in {
 
       # Startup session and shell command
       startupSession = "none";
-      shell = "bash --login -c '~/.config/kitty/kitty_cards.sh; exec bash'";
+      shell = "bash --login -c '${config.home.homeDirectory}/.config/kitty/kitty_cards.sh; exec bash'";
 
       font_family = "JetBrainsMono Nerd Font";
       bold_font = "JetBrainsMono Nerd Font";

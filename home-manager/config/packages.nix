@@ -29,6 +29,7 @@
     sassc
     gtk-engine-murrine
     gnome-themes-extra
+    rose-pine-hyprcursor
 
     # rofi applets dependencies: https://github.com/adi1090x/rofi?tab=readme-ov-file
     mpc_cli
@@ -36,5 +37,7 @@
     # desktop software
     gimp
     discord
+    imv
+    vlc
   ];
 }

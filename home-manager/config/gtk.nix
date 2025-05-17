@@ -10,7 +10,10 @@
       name = "Kanagawa";
       package = pkgs.kanagawa-icon-theme;
     };
-    cursorTheme.name = "rose-pine-hyprcursor";
-    cursorTheme.package = pkgs.rose-pine-hyprcursor;
+    cursorTheme = {
+      name = "rose-pine-cursor";
+      package = pkgs.rose-pine-cursor;
+      size = 24;
+    };
   };
 }
