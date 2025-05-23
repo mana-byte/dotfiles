@@ -33,7 +33,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       880px; // 660
+    width:                       660px; // 660
     x-offset:                    0px;
     y-offset:                    0px;
 
