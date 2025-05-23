@@ -8,4 +8,4 @@ waybar &
 dunst &
 hypridle &
 hyprpaper &
-systemctl --user start hyprpolkitagent
+systemctl --user start hyprpolkitagent 

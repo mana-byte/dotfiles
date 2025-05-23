@@ -1,1 +1,1 @@
-/nix/store/8mf0r24kgispcxw2jb5xfqj6iiky6fip-home-manager-files/.config/kitty/kitty_cards.sh
+/nix/store/bwlgxf0swd99n7wnhns69na0sqscfrf9-home-manager-files/.config/kitty/kitty_cards.sh

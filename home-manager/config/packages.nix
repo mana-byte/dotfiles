@@ -39,5 +39,11 @@
     discord
     imv
     vlc
+    brave
+
+    # anifetch dependencies
+    bc
+    chafa
+    ffmpeg
   ];
 }

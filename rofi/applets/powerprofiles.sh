@@ -7,7 +7,7 @@
 
 # Import Current Theme
 source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="../type-4/style-1.rasi"
+theme="./type-4/style-1.rasi"
 
 # Theme Elements
 prompt='Quick Links'
