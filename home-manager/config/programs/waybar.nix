@@ -93,7 +93,7 @@
         "custom/launcher" = {
           tooltip = true;
           format = " ";
-          on-click = "rofi -show drun -theme ${config.home.homeDirectory}/.config/rofi/launchers/type-6/style-4.rasi";
+          on-click = "bash ${config.home.homeDirectory}/.config/rofi/applets/battery.sh";
           on-click-right = "killall rofi";
           tooltip-format = "NixOS x Hyprland x Kanagawa";
         };

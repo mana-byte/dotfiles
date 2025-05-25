@@ -6,7 +6,7 @@
   kittyCardsScript = ''
     #!/usr/bin/env bash
     # Script to set random image and apply its colors to the current kitty window only
-    IMG_DIR="$HOME/.config/me/cards"
+    IMG_DIR="$HOME/.config/me/cards/cans/"
 
     # Ensure the image directory exists
     if [ ! -d "$IMG_DIR" ]; then
@@ -62,7 +62,7 @@
     fi
 
     # Display the image using kitty's icat
-    kitty +kitten icat --align center --scale-up "$IMG"
+    kitty +kitten icat --align center "$IMG"
 
     exit 0
   '';
@@ -71,7 +71,7 @@ in {
     enable = true;
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = 0.8;
+      background_opacity = 1.0;
       allow_remote_control = true;
 
       # Startup session and shell command

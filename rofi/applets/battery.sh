@@ -7,7 +7,7 @@
 
 # Import Current Theme
 source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="./type-3/style-2.rasi"
+theme="$HOME/.config/rofi/applets/battery.rasi"
 
 # Battery Info
 battery="`acpi -b | cut -d',' -f1 | cut -d':' -f1`"
@@ -23,23 +23,9 @@ fi
 prompt="$status"
 mesg="${battery}: ${percentage}%,${time}"
 
-if [[ "$theme" == *'type-1'* ]]; then
-	list_col='1'
-	list_row='4'
-	win_width='400px'
-elif [[ "$theme" == *'type-3'* ]]; then
-	list_col='1'
-	list_row='4'
-	win_width='120px'
-elif [[ "$theme" == *'type-5'* ]]; then
-	list_col='1'
-	list_row='4'
-	win_width='500px'
-elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
-	list_col='4'
-	list_row='1'
-	win_width='550px'
-fi
+list_col='1'
+list_row='4'
+win_width='140px'
 
 # Charging Status
 active=""
@@ -69,18 +55,10 @@ elif [[ $percentage -ge 80 ]] && [[ $percentage -le 100 ]]; then
 fi
 
 # Options
-layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
-if [[ "$layout" == 'NO' ]]; then
-	option_1=" Remaining ${percentage}%"
-	option_2=" $status"
-	option_3=" Power Manager"
-	option_4=" Diagnose"
-else
-	option_1="$ICON_DISCHRG"
-	option_2="$ICON_CHRG"
-	option_3=""
-	option_4=""
-fi
+option_1="$ICON_DISCHRG"
+option_2="$ICON_CHRG"
+option_3="  "
+option_4="  "
 
 # Rofi CMD
 rofi_cmd() {
@@ -106,11 +84,13 @@ run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
 		notify-send -u low " Remaining : ${percentage}%"
 	elif [[ "$1" == '--opt2' ]]; then
-		notify-send -u low "$ICON_CHRG Status : $status"
+        notify-send -u low " Status:" "$status"
 	elif [[ "$1" == '--opt3' ]]; then
-		xfce4-power-manager-settings
+        ${polkit_cmd} nixos-rebuild switch
+        notify-send -u low "System:" "NixOS configuration has been applied."
 	elif [[ "$1" == '--opt4' ]]; then
-		${polkit_cmd} alacritty -e powertop
+		home-manager switch
+        notify-send -u low "System:" "Home Manager configuration has been applied."
 	fi
 }
 

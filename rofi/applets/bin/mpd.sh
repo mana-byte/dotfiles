@@ -19,39 +19,20 @@ else
 	mesg="`mpc -f "%title%" current` :: `mpc status | grep "#" | awk '{print $3}'`"
 fi
 
-if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
-	list_col='1'
-	list_row='6'
-elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
-	list_col='6'
-	list_row='1'
-fi
+list_col='1'
+list_row='6'
 
 # Options
-layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
-if [[ "$layout" == 'NO' ]]; then
-	if [[ ${status} == *"[playing]"* ]]; then
-		option_1=" Pause"
-	else
-		option_1=" Play"
-	fi
-	option_2=" Stop"
-	option_3=" Previous"
-	option_4=" Next"
-	option_5=" Repeat"
-	option_6=" Random"
+if [[ ${status} == *"[playing]"* ]]; then
+    option_1=" Pause"
 else
-	if [[ ${status} == *"[playing]"* ]]; then
-		option_1=" Pause"
-	else
-		option_1="  Play"
-	fi
-	option_2="  Stop"
-	option_3="  Back"
-	option_4="  Next"
-	option_5="  Repeat"
-	option_6="  Random"
+    option_1="  Play"
 fi
+option_2="  Stop"
+option_3="  Back"
+option_4="  Next"
+option_5="  Repeat"
+option_6="  Random"
 
 # Toggle Actions
 active=''

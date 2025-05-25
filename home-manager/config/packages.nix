@@ -40,6 +40,7 @@
     imv
     vlc
     brave
+    acpi # for battery status in hyprland bar
 
     # anifetch dependencies
     bc
