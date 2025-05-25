@@ -62,7 +62,7 @@
     fi
 
     # Display the image using kitty's icat
-    kitty +kitten icat --align center "$IMG"
+    kitty +kitten icat --align left "$IMG"
 
     exit 0
   '';
