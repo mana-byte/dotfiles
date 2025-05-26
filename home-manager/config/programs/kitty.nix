@@ -30,11 +30,11 @@
     fi
 
     # Check if pywal is installed
-    if ! command -v wal &> /dev/null; then
-        echo "pywal is not installed. Please install it first:"
-        echo "pip install pywal"
-        exit 1
-    fi
+    # if ! command -v wal &> /dev/null; then
+    #     echo "pywal is not installed. Please install it first:"
+    #     echo "pip install pywal"
+    #     exit 1
+    # fi
 
     # Pick a random image
     IMG=$(find "$IMG_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | shuf -n 1)
@@ -47,19 +47,22 @@
 
     # Generate colors with pywal but without changing other applications (-n flag)
     # Also using -q for quiet mode
-    wal -i "$IMG" -s -q
+    # wal -i "$IMG" -s -q
 
     # Wait briefly to ensure Kitty is fully initialized
     sleep 0.5
 
     # Apply the colors ONLY to the current window using kitty's remote control protocol
-    if [ -f "$HOME/.cache/wal/colors-kitty.conf" ]; then
-        # Instead of creating a temp file, pipe directly to kitty
-        cat "$HOME/.cache/wal/colors-kitty.conf" | kitty @ set-colors --configured --match "id:$KITTY_WINDOW_ID" ~/.cache/wal/colors-kitty.conf
-    else
-        echo "Failed to find wal color cache. Something went wrong with pywal."
-        exit 1
-    fi
+    # if [ -f "$HOME/.cache/wal/colors-kitty.conf" ]; then
+    #     # Instead of creating a temp file, pipe directly to kitty
+    #     cat "$HOME/.cache/wal/colors-kitty.conf" | kitty @ set-colors --configured --match "id:$KITTY_WINDOW_ID" ~/.cache/wal/colors-kitty.conf
+    # else
+    #     echo "Failed to find wal color cache. Something went wrong with pywal."
+    #     exit 1
+    # fi
+
+    # Set the colors for the current kitty window
+    cat "$HOME/.cache/wal/colors-kitty.conf" | kitty @ set-colors --configured --match "id:$KITTY_WINDOW_ID" ~/.cache/wal/colors-kitty.conf
 
     # Display the image using kitty's icat
     kitty +kitten icat --align left "$IMG"

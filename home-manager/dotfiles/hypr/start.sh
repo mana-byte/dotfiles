@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 swww init &
-swww img  ~/.config/me/background/shop.png --transition-type center &
+swww img  ~/.config/me/background/anby.jpg --transition-type center &
 nm-applet --indicator &
 waybar &
 dunst &

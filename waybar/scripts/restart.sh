@@ -1,0 +1,1 @@
+/nix/store/924x72rgf3qaiaw1d5572srng6csqrsq-home-manager-files/.config/waybar/scripts/restart.sh
