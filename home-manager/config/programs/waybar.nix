@@ -113,8 +113,8 @@
 
         "custom/wallpaper" = {
           format = " ";
-          on-click = "swww img ${config.home.homeDirectory}/.config/me/background/anby.jpg --transition-type outer --transition-pos 0.108,0.98 --transition-fps 60";
-          on-click-right = "swww img ${config.home.homeDirectory}/.config/me/background/anby_black.jpg --transition-type grow --transition-pos 0.108,0.98 --transition-fps 60";
+          on-click = "swww img ${config.home.homeDirectory}/.config/me/background/shop.png --transition-type outer --transition-pos 0.108,0.98 --transition-fps 60";
+          on-click-right = "swww img ${config.home.homeDirectory}/.config/me/background/shop_night_moon.png --transition-type grow --transition-pos 0.108,0.98 --transition-fps 60";
           tooltip-format = "Change Wallpaper (left bright, right dark)";
         };
       }
