@@ -303,7 +303,7 @@
       	padding-left: 8px;
       	padding-right: 3px;
       	transition: none;
-          color: @color2;
+        color: @color1;
       }
 
       #custom-power {
@@ -338,14 +338,21 @@
       	margin-bottom: 0px;
       	border-radius: 10px;
       	transition: none;
-      	color: @color6;
+      	color: @color1;
       }
 
       #workspaces button {
           transition: none;
+          background: transparent;
           color: @color6;
           font-size: 16px;
       }
+      #workspaces button.active {
+          color: @color1;
+          background: transparent;
+          border-bottom: 2px solid @color1;
+      }
+
 
       #custom-wallpaper {
       	font-size: 20px;
@@ -357,7 +364,7 @@
       	margin-bottom: 0px;
       	border-radius: 10px;
       	transition: none;
-      	color: @neon-red;
+      	color: @color7;
       }
 
 
