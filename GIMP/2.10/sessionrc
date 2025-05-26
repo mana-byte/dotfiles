@@ -11,12 +11,12 @@
     (size 640 480))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 22 78)
-    (size 2260 1340)
+    (position 1160 83)
+    (size 1121 1334)
     (open-on-exit)
     (aux-info
-        (left-docks-width "178")
-        (right-docks-width "205")
+        (left-docks-width "180")
+        (right-docks-width "208")
         (maximized "no"))
     (gimp-toolbox
         (side left)
@@ -87,7 +87,7 @@
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
     (position 5 145)
-    (size 553 530))
+    (size 948 712))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
     (position 0 86))

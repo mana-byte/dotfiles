@@ -351,6 +351,7 @@
           color: @color1;
           background: transparent;
           border-bottom: 2px solid @color1;
+          border-radius: 0px;
       }
 
 
