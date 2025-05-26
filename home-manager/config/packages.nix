@@ -30,6 +30,7 @@
     gtk-engine-murrine
     gnome-themes-extra
     rose-pine-hyprcursor
+    swww
 
     # rofi applets dependencies: https://github.com/adi1090x/rofi?tab=readme-ov-file
     mpc_cli

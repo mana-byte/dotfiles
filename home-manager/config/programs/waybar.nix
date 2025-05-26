@@ -8,7 +8,7 @@
     settings = [
       {
         layer = "top";
-        modules-left = ["custom/launcher" "cpu" "memory" "custom/media" "tray"];
+        modules-left = ["custom/launcher" "cpu" "memory" "custom/wallpaper" "custom/media" "tray"];
         modules-center = ["hyprland/workspaces"];
         modules-right = ["custom/photo" "network" "pulseaudio" "clock" "battery" "custom/power"];
 
@@ -108,7 +108,14 @@
           format = "";
           on-click = "hyprshot -m window";
           on-click-right = "hyprshot -m region";
-          tooltip-format = "Take a screenshot";
+          tooltip-format = "Take a screenshot of a window (left click) or a region (right click)";
+        };
+
+        "custom/wallpaper" = {
+          format = " ";
+          on-click = "swww img ${config.home.homeDirectory}/.config/me/background/anby.jpg --transition-type outer --transition-pos 0.108,0.98 --transition-fps 60";
+          on-click-right = "swww img ${config.home.homeDirectory}/.config/me/background/anby_black.jpg --transition-type grow --transition-pos 0.108,0.98 --transition-fps 60";
+          tooltip-format = "Change Wallpaper (left bright, right dark)";
         };
       }
     ];
@@ -355,7 +362,6 @@
       	transition: none;
           color: @wave_red
       }
-
       #custom-media {
       	margin-top: 6px;
       	margin-left: 8px;
@@ -371,6 +377,19 @@
           transition: none;
           color: @fuji_white;
           font-size: 16px;
+      }
+
+      #custom-wallpaper {
+      	font-size: 20px;
+      	margin-top: 6px;
+      	margin-left: 8px;
+      	margin-right: 8px;
+      	padding-left: 10px;
+      	padding-right: 5px;
+      	margin-bottom: 0px;
+      	border-radius: 10px;
+      	transition: none;
+      	color: @wave_red;
       }
 
 
