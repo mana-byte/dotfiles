@@ -1,6 +1,7 @@
 sw_volume: 100
 audio_device_state:1:My PipeWire Output
 state: stop
+current: 0
 random: 0
 repeat: 1
 single: 0

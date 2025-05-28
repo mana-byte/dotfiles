@@ -43,6 +43,7 @@
     vlc
     brave
     acpi # for battery status in hyprland bar
+    cheese # for webcam
 
     # anifetch dependencies
     bc
