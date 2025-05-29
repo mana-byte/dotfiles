@@ -6,4 +6,6 @@ nm-applet --indicator &
 waybar &
 dunst &
 hypridle &
-systemctl --user start hyprpolkitagent 
+systemctl --user start hyprpolkitagent &
+udiskie --tray &
+rog-control-center
