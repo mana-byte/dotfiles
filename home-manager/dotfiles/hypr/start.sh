@@ -8,4 +8,5 @@ dunst &
 hypridle &
 systemctl --user start hyprpolkitagent &
 udiskie --tray &
-rog-control-center
+rog-control-center &
+hyprsunset
