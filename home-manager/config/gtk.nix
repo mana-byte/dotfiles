@@ -11,8 +11,8 @@
       package = pkgs.gruvbox-dark-icons-gtk;
     };
     cursorTheme = {
-      name = "rose-pine-cursor";
-      package = pkgs.rose-pine-cursor;
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
       size = 24;
     };
   };

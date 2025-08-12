@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-swww init &
+swww-daemon &
 swww img  ~/.config/me/background/anby.jpg --transition-type center &
 nm-applet --indicator &
 waybar &

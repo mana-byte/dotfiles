@@ -49,7 +49,7 @@
           states = {
             good = 95;
             warning = 30;
-            critical = 20;
+            critical = 10;
           };
           format = "{icon}  {capacity}%";
           format-charging = " {capacity}%";
@@ -231,6 +231,7 @@
       	border-radius: 10px;
       	transition: none;
       	color: @color3;
+        border-radius: 0px;
       }
 
       #battery.charging, #battery.plugged {
