@@ -16,7 +16,7 @@
     # ./config/programs/zsh.nix
     ./config/bashrc.nix
     ./config/programs/git.nix
-    ./config/programs/neovim.nix
+    # ./config/programs/neovim.nix
     ./config/programs/hyprconfig.nix
     ./config/programs/mpd.nix
     ./config/programs/starship.nix

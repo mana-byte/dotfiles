@@ -6,6 +6,9 @@
   home.packages = with pkgs; [
     # system info : battery health, cpu temp, memory usage, disk usage, etc.
     inxi
+
+    killall # kill all processes of a specific name
+
     # work basics
     neovim
     git
@@ -53,7 +56,9 @@
     gimp
     discord
     imv
+    # video player
     vlc
+
     brave
     acpi # for battery status in hyprland bar
     cheese # for webcam

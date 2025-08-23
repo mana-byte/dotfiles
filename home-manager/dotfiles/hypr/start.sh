@@ -9,4 +9,7 @@ hypridle &
 systemctl --user start hyprpolkitagent &
 udiskie --tray &
 rog-control-center &
-hyprsunset
+hyprsunset &
+kdeconnectd &
+kdeconnect-indicator &
+blueman-applet

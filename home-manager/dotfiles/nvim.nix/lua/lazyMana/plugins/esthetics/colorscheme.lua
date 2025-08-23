@@ -4,6 +4,7 @@ end
 return {
     'rebelot/kanagawa.nvim',
     -- 'folke/tokyonight.nvim',
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
     {
         'catppuccin/nvim',
         lazy = false,
