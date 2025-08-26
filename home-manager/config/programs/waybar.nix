@@ -95,7 +95,7 @@
           format = " ";
           on-click = "bash ${config.home.homeDirectory}/.config/rofi/applets/battery.sh";
           on-click-right = "killall rofi";
-          tooltip-format = "NixOS x Hyprland x Kanagawa";
+          tooltip-format = "NixOS x Hyprland x Anby";
         };
 
         "custom/power" = {
