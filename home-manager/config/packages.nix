@@ -56,8 +56,14 @@
     gimp
     discord
     imv
-    # video player
-    vlc
+    # video playyer : also dependency for youtube tui
+    mpv
+
+    # youtube tui depenndencies
+    youtube-tui
+    yt-dlp
+    libsixel
+    xorg.libxcb
 
     brave
     acpi # for battery status in hyprland bar
