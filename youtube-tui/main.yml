@@ -14,6 +14,7 @@ limits:
   watch_history: 50
   search_history: 75
   commands_history: 75
+textbar_scroll_behaviour: History
 image_index: 4
 provider: YouTube
 search_provider: RustyPipe
@@ -21,9 +22,9 @@ api_key: YOUR API KEY HERE
 shell: sh
 legacy_input_handling: false
 env:
-  terminal-emulator: kitty -e
   download-path: ~/Downloads/%(title)s-%(id)s.%(ext)s
   browser: brave
-  save-path: ~/.local/share/youtube-tui/saved/
   youtube-downloader: yt-dlp
+  save-path: ~/.local/share/youtube-tui/saved/
+  terminal-emulator: kitty -e
   video-player: mpv

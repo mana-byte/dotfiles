@@ -59,13 +59,14 @@
     # video playyer : also dependency for youtube tui
     mpv
 
-    # youtube tui depenndencies
+    # youtube tui (to watch youtube from terminal) depenndencies
     youtube-tui
+    pavucontrol
     yt-dlp
     libsixel
     xorg.libxcb
 
-    brave
+    brave # web browser
     acpi # for battery status in hyprland bar
     cheese # for webcam
 
