@@ -126,18 +126,25 @@
     style = ''
       @import url("file:///home/mana/.cache/wal/colors-waybar.css");
       @define-color neon-red #ff242b;
+      @define-color transparent_black rgba(0, 0, 0, 0.8);
 
       * {
       	border: none;
-      	border-radius: 10;
+      	border-radius: 5;
           font-family: "JetbrainsMono Nerd Font" ;
       	font-size: 16px;
       	/* min-height: 10px; */
           margin: 2px;
       }
 
+      *:hover {
+        	background: rgba(255, 255, 255, 0.1);
+            font-size: 18px;
+            transition: all 0.2s ease-in-out;
+      }
+
       window#waybar {
-      	background: @background;
+      	background: @transparent_black;
           border-radius: 0px;
           /* allows the buttons to not be cut */
           padding: 0px;
@@ -188,17 +195,6 @@
           border-bottom: 2px solid #ABE9B3;
       }
 
-      #tags button:hover {
-      	transition: none;
-      	box-shadow: inherit;
-      	text-shadow: inherit;
-          border-color: #E8A2AF;
-          color: #E8A2AF;
-      }
-
-      #tags button.focused:hover {
-          color: #E8A2AF;
-      }
 
       #network {
       	margin-top: 6px;
@@ -296,6 +292,9 @@
       	transition: none;
       	/* background-color: @dragon_blue; */
       }
+      #tray:hover {
+        background: transparent;
+      }
 
       #custom-launcher {
       	font-size: 24px;
@@ -305,6 +304,12 @@
       	padding-right: 3px;
       	transition: none;
         color: @color1;
+      }
+      #custom-launcher:hover {
+      	margin-top: 6px;
+      	margin-left: 8px;
+      	padding-left: 10px;
+      	padding-right: 5px;
       }
 
       #custom-power {
@@ -354,6 +359,10 @@
           border-bottom: 2px solid @color1;
           border-radius: 0px;
       }
+      #workspaces:hover button {
+          background: transparent;
+      }
+
 
 
       #custom-wallpaper {
