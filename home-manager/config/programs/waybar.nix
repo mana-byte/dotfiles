@@ -138,7 +138,6 @@
       }
 
       *:hover {
-        	background: rgba(255, 255, 255, 0.1);
             font-size: 18px;
             transition: all 0.2s ease-in-out;
       }
@@ -291,9 +290,6 @@
       	border-radius: 10px;
       	transition: none;
       	/* background-color: @dragon_blue; */
-      }
-      #tray:hover {
-        background: transparent;
       }
 
       #custom-launcher {
