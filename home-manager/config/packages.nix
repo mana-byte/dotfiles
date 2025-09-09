@@ -1,8 +1,4 @@
-{
-  pkgs,
-  config,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     # system info : battery health, cpu temp, memory usage, disk usage, etc.
     inxi
