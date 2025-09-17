@@ -1,25 +1,25 @@
-video: loadpage video
-rc: reload configs
-r: reload
-h: help
-popular: loadpage popular
-search: loadpage search
-bookmarks: loadpage bookmarks
-back: mpv playlist-previous ;; echo mpv Skipped
 v: version
-skip: mpv playlist-next ;; echo mpv Skipped
-tpause: mpv tprop pause ;; echo success Toggled player pause
-feed: loadpage feed
-print: echo
-pause: mpv sprop pause yes ;; echo mpv Player paused
-channel: loadpage channel
-exit: quit
-watchhistory: loadpage watchhistory
-library: loadpage library
+search: loadpage search
 x: quit
+resume: mpv sprop pause no ;; echo mpv Player resumed
 trending: loadpage trending
+cp: copy
+print: echo
+h: help
+bookmarks: loadpage bookmarks
+pause: mpv sprop pause yes ;; echo mpv Player paused
+back: mpv playlist-previous ;; echo mpv Skipped
+q: quit
+watchhistory: loadpage watchhistory
+exit: quit
+feed: loadpage feed
+r: reload
+channel: loadpage channel
+popular: loadpage popular
 sub: sync
 playlist: loadpage playlist
-cp: copy
-q: quit
-resume: mpv sprop pause no ;; echo mpv Player resumed
+tpause: mpv tprop pause ;; echo success Toggled player pause
+video: loadpage video
+library: loadpage library
+skip: mpv playlist-next ;; echo mpv Skipped
+rc: reload configs

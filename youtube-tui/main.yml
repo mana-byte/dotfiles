@@ -23,8 +23,8 @@ shell: sh
 legacy_input_handling: false
 env:
   save-path: ~/.local/share/youtube-tui/saved/
-  terminal-emulator: kitty -e
   video-player: mpv
-  browser: brave
   youtube-downloader: yt-dlp
+  browser: brave
+  terminal-emulator: kitty -e
   download-path: ~/Downloads/%(title)s-%(id)s.%(ext)s

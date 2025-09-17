@@ -44,6 +44,29 @@ return {
     },
     'tpope/vim-repeat',
     -- {
+    --     "nvim-telescope/telescope-file-browser.nvim",
+    --     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+    --     config = function()
+    --         require("telescope").setup {
+    --           extensions = {
+    --             file_browser = {
+    --               theme = "ivy",
+    --               -- disables netrw and use telescope-file-browser in its place
+    --               mappings = {
+    --                 ["i"] = {
+    --                   -- your custom insert mode mappings
+    --                 },
+    --                 ["n"] = {
+    --                   -- your custom normal mode mappings
+    --                 },
+    --               },
+    --             },
+    --           },
+    --         }
+    --         require("telescope").load_extension "file_browser"
+    --     end
+    -- },
+    -- {
     --     'nvim-tree/nvim-tree.lua',
     --     config = function()
     --         local status_ok, tree = pcall(require, "nvim-tree")

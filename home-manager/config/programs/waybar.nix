@@ -100,8 +100,8 @@
 
         "custom/power" = {
           format = " ";
-          on-click = "bash ${config.home.homeDirectory}/.config/rofi/powermenu/type-6/powermenu.sh";
-          tooltip-format = "Bring up the power menu";
+          on-click = "hyprctl dispatch exit";
+          tooltip-format = "Exit Hyprland";
         };
 
         "custom/photo" = {

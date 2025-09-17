@@ -66,6 +66,8 @@
     acpi # for battery status in hyprland bar
     cheese # for webcam
 
+    obs-studio # screen recording and streaming
+
     # anifetch dependencies
     bc
     chafa

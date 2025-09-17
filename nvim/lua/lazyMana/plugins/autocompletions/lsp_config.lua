@@ -1,12 +1,12 @@
 return {
-	{
-		-- DO NOT USE MASON FOR NIXOS
-		-- ONLY HERE AS A DEPENDENCY FOR mason-lspconfig
-		"williamboman/mason.nvim",
-		config = function()
-			require("mason").setup()
-		end,
-	},
+	-- {
+	-- 	-- DO NOT USE MASON FOR NIXOS
+	-- 	-- ONLY HERE AS A DEPENDENCY FOR mason-lspconfig
+	-- 	"williamboman/mason.nvim",
+	-- 	config = function()
+	-- 		require("mason").setup()
+	-- 	end,
+	-- },
 	{
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
