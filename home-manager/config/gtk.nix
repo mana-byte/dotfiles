@@ -2,18 +2,19 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Gruvbox-Dark";
-      package = pkgs.gruvbox-gtk-theme;
+      name = "catppuccin-frappe-blue-standard";
+      package = pkgs.catppuccin-gtk;
       # package = pkgs.nwg-look;
     };
     iconTheme = {
-      name = "oomox-gruvbox-dark";
-      package = pkgs.gruvbox-dark-icons-gtk;
+      name = "Papirus-Dark";
+      package = pkgs.catppuccin-papirus-folders;
     };
     cursorTheme = {
       name = "Bibata-Modern-Classic";
       package = pkgs.bibata-cursors;
       size = 24;
     };
+    font.name = "DepartureMono Nerd Font";
   };
 }

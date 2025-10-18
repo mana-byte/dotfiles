@@ -43,7 +43,7 @@
     rose-pine-hyprcursor
     swww
     pywal
-    # nwg-look
+    nwg-look
 
     # rofi applets dependencies: https://github.com/adi1090x/rofi?tab=readme-ov-file
     mpc_cli

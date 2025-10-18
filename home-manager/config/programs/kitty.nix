@@ -81,10 +81,10 @@ in {
       startupSession = "none";
       shell = "bash --login -c '${config.home.homeDirectory}/.config/kitty/kitty_cards.sh; exec bash'";
 
-      font_family = "JetBrainsMono Nerd Font";
-      bold_font = "JetBrainsMono Nerd Font";
-      italic_font = "JetBrainsMono Nerd Font";
-      bold_italic_font = "JetBrainsMono Nerd Font";
+      font_family = "DepartureMono Nerd Font";
+      bold_font = "DepartureMono Nerd Font";
+      italic_font = "DepartureMono Nerd Font";
+      bold_italic_font = "DepartureMono Nerd Font";
     };
   };
   home.file.".config/kitty/kitty_cards.sh" = {

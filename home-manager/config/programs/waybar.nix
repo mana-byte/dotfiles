@@ -113,11 +113,11 @@
 
         "custom/wallpaper" = {
           format = " ";
-          on-click = "wal -i ${config.home.homeDirectory}/.config/me/background/anby.jpg &
-                      swww img ${config.home.homeDirectory}/.config/me/background/anby.jpg --transition-type outer --transition-pos 0.108,0.98 --transition-fps 60 &
+          on-click = "wal -i ${config.home.homeDirectory}/.config/me/background/animated/street.jpg &
+                      swww img ${config.home.homeDirectory}/.config/me/background/animated/street.gif --transition-type outer --transition-pos 0.108,0.98 --transition-fps 60 &
                       ${config.home.homeDirectory}/.config/waybar/scripts/restart.sh";
-          on-click-right = "wal -i ${config.home.homeDirectory}/.config/me/background/anby_black.jpg &
-                      swww img ${config.home.homeDirectory}/.config/me/background/anby_black.jpg --transition-type grow --transition-pos 0.108,0.98 --transition-fps 60 &
+          on-click-right = "wal -i ${config.home.homeDirectory}/.config/me/background/animated/yaemiko_I_swear_me_not_pervert.png &
+                      swww img ${config.home.homeDirectory}/.config/me/background/animated/yaemiko_I_swear_me_not_pervert.gif --transition-type grow --transition-pos 0.108,0.98 --transition-fps 60 &
                       ${config.home.homeDirectory}/.config/waybar/scripts/restart.sh";
           tooltip-format = "Change Wallpaper (left bright, right dark)";
         };
@@ -131,10 +131,10 @@
       * {
       	border: none;
       	border-radius: 5;
-          font-family: "JetbrainsMono Nerd Font" ;
+        font-family: "DepartureMono Nerd Font";
       	font-size: 16px;
       	/* min-height: 10px; */
-          margin: 2px;
+        margin: 2px;
       }
 
       *:hover {
