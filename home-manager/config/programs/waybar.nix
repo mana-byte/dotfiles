@@ -113,17 +113,12 @@
 
         "custom/wallpaper" = {
           format = " ";
-<<<<<<< HEAD
-          on-click = "swww img ${config.home.homeDirectory}/.config/me/background/shop.png --transition-type outer --transition-pos 0.108,0.98 --transition-fps 60";
-          on-click-right = "swww img ${config.home.homeDirectory}/.config/me/background/shop_night_moon.png --transition-type grow --transition-pos 0.108,0.98 --transition-fps 60";
-=======
           on-click = "wal -i ${config.home.homeDirectory}/.config/me/background/animated/street.jpg &
                       swww img ${config.home.homeDirectory}/.config/me/background/animated/street.gif --transition-type outer --transition-pos 0.108,0.98 --transition-fps 60 &
                       ${config.home.homeDirectory}/.config/waybar/scripts/restart.sh";
           on-click-right = "wal -i ${config.home.homeDirectory}/.config/me/background/animated/yaemiko_I_swear_me_not_pervert.png &
                       swww img ${config.home.homeDirectory}/.config/me/background/animated/yaemiko_I_swear_me_not_pervert.gif --transition-type grow --transition-pos 0.108,0.98 --transition-fps 60 &
                       ${config.home.homeDirectory}/.config/waybar/scripts/restart.sh";
->>>>>>> anby
           tooltip-format = "Change Wallpaper (left bright, right dark)";
         };
       }
