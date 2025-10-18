@@ -1,0 +1,1 @@
+/nix/store/cp4000yfi8v4hhsmkjjc8qcbxrgbh553-home-manager-files/.config/waybar/scripts/restart.sh
