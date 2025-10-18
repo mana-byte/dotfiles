@@ -7,7 +7,7 @@
 
 # Import Current Theme
 source "$HOME"/.config/rofi/applets/shared/theme.bash
-theme="~/.config/rofi/applets/type-5/music.rasi"
+theme="~/.config/rofi/applets/type-3/music.rasi"
 
 # Theme Elements
 status="`mpc status`"
@@ -24,15 +24,15 @@ list_row='6'
 
 # Options
 if [[ ${status} == *"[playing]"* ]]; then
-    option_1=" Pause"
+    option_1=""
 else
-    option_1="  Play"
+    option_1=""
 fi
-option_2="  Stop"
-option_3="  Back"
-option_4="  Next"
-option_5="  Repeat"
-option_6="  Random"
+option_2=""
+option_3=""
+option_4=""
+option_5=""
+option_6=""
 
 # Toggle Actions
 active=''

@@ -14,10 +14,10 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    background:     #16161D;
-    background-alt: #54546D;
-    foreground:     #EBDBB2FF;
-    selected:       #7FB4CA;
+    background:     #090a08;
+    background-alt: #959595;
+    foreground:     #ffffff;
+    selected:       #DFFA2D;
     active:         #B8BB26FF;
     urgent:         #FB4934FF;
 }
@@ -41,7 +41,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               10px;
+    border-radius:               5px;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
@@ -124,7 +124,7 @@ element {
     enabled:                     true;
     padding:                     23px 10px;
     border:                      0px solid;
-    border-radius:               10px;
+    border-radius:               5px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;

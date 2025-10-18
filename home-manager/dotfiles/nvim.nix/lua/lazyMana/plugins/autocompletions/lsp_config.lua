@@ -21,7 +21,10 @@ return {
 
             vim.lsp.enable("biome")
             vim.lsp.enable("lua_ls")
+
             vim.lsp.enable("pylsp")
+            vim.lsp.enable('pyright')
+
             vim.lsp.enable("vimls")
             vim.lsp.enable("html")
             vim.lsp.enable("nil_ls")

@@ -1,14 +1,25 @@
-{
-  pkgs,
-  config,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
+    # system info : battery health, cpu temp, memory usage, disk usage, etc.
+    inxi
+
+    killall # kill all processes of a specific name
+
     # work basics
     neovim
     git
     kitty
     tmux
+    nautilus
+    clipman
+
+    # apps
+    rofi-wayland
+    networkmanagerapplet
+
+    # notifications
+    dunst
+    libnotify
 
     # nix packages
     alejandra
@@ -16,7 +27,7 @@
 
     # for nvim config lsp and tree sitter to work correctly
     cargo
-    nodejs_23
+    nodejs_24
     (python3.withPackages (python-pkgs: [
       python-pkgs.requests
     ]))
@@ -31,6 +42,8 @@
     gnome-themes-extra
     rose-pine-hyprcursor
     swww
+    pywal
+    nwg-look
 
     # rofi applets dependencies: https://github.com/adi1090x/rofi?tab=readme-ov-file
     mpc_cli
@@ -39,9 +52,21 @@
     gimp
     discord
     imv
-    vlc
-    brave
+    # video playyer : also dependency for youtube tui
+    mpv
+
+    # youtube tui (to watch youtube from terminal) depenndencies
+    youtube-tui
+    pavucontrol
+    yt-dlp
+    libsixel
+    xorg.libxcb
+
+    brave # web browser
     acpi # for battery status in hyprland bar
+    cheese # for webcam
+
+    obs-studio # screen recording and streaming
 
     # anifetch dependencies
     bc
