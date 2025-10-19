@@ -14,3 +14,5 @@ nextjs-nodejs/
 wireshark/
 obs-studio/
 gtk-3.0/bookmarks
+dunst/
+systemd/user/dunst.service

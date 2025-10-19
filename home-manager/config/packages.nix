@@ -5,6 +5,10 @@
 
     killall # kill all processes of a specific name
 
+    # display management
+    wlr-randr
+
+
     # work basics
     neovim
     git
@@ -14,7 +18,7 @@
     clipman
 
     # apps
-    rofi-wayland
+    rofi
     networkmanagerapplet
 
     # notifications
@@ -72,5 +76,7 @@
     bc
     chafa
     ffmpeg
+
+    # Useful nwg applets
   ];
 }

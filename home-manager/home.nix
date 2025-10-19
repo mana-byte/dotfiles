@@ -22,6 +22,7 @@
     ./config/programs/starship.nix
     ./config/programs/kitty.nix
     ./config/programs/waybar.nix
+    ./config/programs/dunst.nix
     # ./config/programs/tmux.nix
   ];
 

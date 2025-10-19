@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 swww-daemon &
-wal -i ${config.home.homeDirectory}/.config/me/background/animated/street.jpg &
+wal -i ~/.config/me/background/animated/street.jpg &
 swww img  ~/.config/me/background/animated/street.gif --transition-type center &
 nm-applet --indicator &
 waybar &

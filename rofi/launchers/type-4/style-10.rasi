@@ -21,13 +21,13 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font: "JetBrains Mono Nerd Font 11";
+    font: "DepartureMono Nerd Font 11"; 
 }
 * {
-    background:     #090a08;
-    background-alt: #353535FF;
-    foreground:     #DCF72B;
-    selected:       #DCF72B;
+    background:     #191219;
+    background-alt: #090a08FF;
+    foreground:     #dbcecd;
+    selected:       #749493;
     active:         #B8BB26FF;
     urgent:         #FB4934FF;
 }
@@ -65,7 +65,7 @@ window {
     location:                    south;
     anchor:                      south;
     fullscreen:                  false;
-    width:                       90%;
+    width:                       70%;
     x-offset:                    0px;
     y-offset:                    -10px;
 
@@ -74,7 +74,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               5px;
+    border-radius:               10px;
     border-color:                @border-colour;
     cursor:                      "default";
     background-color:            @background-colour;
