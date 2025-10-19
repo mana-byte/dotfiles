@@ -19,6 +19,6 @@ obs-studio/
 gtk-3.0/bookmarks
 dunst/
 systemd/user/dunst.service
-# pavucontrol.ini
-# mimeapps.list
-# github-copilot.vim/
+pavucontrol.ini
+mimeapps.list
+github-copilot.vim/
