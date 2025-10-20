@@ -12,4 +12,5 @@ udiskie --tray &
 hyprsunset &
 kdeconnectd &
 kdeconnect-indicator &
-blueman-applet
+blueman-applet &
+rog-control-center

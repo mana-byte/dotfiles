@@ -1,1 +1,1 @@
-/nix/store/vkplbhn9ilwg4cijiaw0pwjblzy1q3p6-home-manager-files/.config/waybar/scripts/mediaplayer.py
+/nix/store/0213grcadid00rfym3s5jci52ax64rcm-home-manager-files/.config/waybar/scripts/mediaplayer.py

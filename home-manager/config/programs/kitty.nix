@@ -85,6 +85,8 @@ in {
       bold_font = "DepartureMono Nerd Font";
       italic_font = "DepartureMono Nerd Font";
       bold_italic_font = "DepartureMono Nerd Font";
+
+      font_size = 12.0;
     };
   };
   home.file.".config/kitty/kitty_cards.sh" = {

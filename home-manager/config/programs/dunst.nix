@@ -17,7 +17,7 @@
     iconTheme.package = pkgs.catppuccin-papirus-folders;
     settings = {
       global = {
-        width = "(0, 300)";
+        width = "(0, 500)";
         height = "(0, 300)";
         origin = "bottom-right";
         font = "DepartureMono Nerd Font 12";
